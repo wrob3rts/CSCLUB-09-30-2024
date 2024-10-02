@@ -22,6 +22,7 @@ int problemTwo(const char* inputFileName, const char* outputFileName, int multip
         if(possibleRemainders[remainder] == -1) possibleRemainders[remainder] = i;
         else if(longestPhoto < (i - possibleRemainders[remainder])) longestPhoto = i - possibleRemainders[remainder];
     }
+    outputFile << longestPhoto;
     return longestPhoto;
 }
 
